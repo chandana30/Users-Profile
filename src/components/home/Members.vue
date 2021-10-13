@@ -3,7 +3,7 @@
   <div class="row">
     <div class="column" v-for="(uservalue, index) in userData" :key="index">
       <div class="card" @click="getdata(uservalue)">
-      <img :src="uservalue.avatar" />
+        <img :src="uservalue.avatar" />
       </div>
     </div>
   </div>
@@ -49,7 +49,7 @@ export default {
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
-.column{
+.column {
   float: left;
   width: 27%;
   padding: 0 10px;

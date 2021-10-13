@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-  <h2>User {{userdetails.id}} Information</h2>
+    <h2>User {{ userdetails.id }} Information</h2>
     <div class="card">
       <img :src="userdetails.avatar" alt="images" style="width:100%" />
       <h1>Name: {{ userdetails.first_name }} {{ userdetails.last_name }}</h1>
@@ -36,7 +36,7 @@ export default {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 400px;
   height: 50%;
-margin:auto;
+  margin: auto;
   text-align: center;
   font-family: arial;
 }
@@ -58,7 +58,8 @@ button {
   width: 100%;
   font-size: 18px;
 }
-button:hover, a:hover {
+button:hover,
+a:hover {
   opacity: 0.7;
 }
 </style>
