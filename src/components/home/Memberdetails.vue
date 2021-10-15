@@ -1,12 +1,12 @@
 <template>
   <div class="container">
-    <h2>User {{ userdetails.id }} Information</h2>
+    <h2>User {{ userdetails.id }} Details</h2>
     <div class="card">
       <img :src="userdetails.avatar" alt="images" style="width:100%" />
       <h1>Name: {{ userdetails.first_name }} {{ userdetails.last_name }}</h1>
-      <p class="title">email id: {{ userdetails.email }}</p>
+      <p class="title">Email id: {{ userdetails.email }}</p>
       <p>
-        <button @click="this.$router.back()">Go Back</button>
+        <button @click="this.$router.back()">Back to Users</button>
       </p>
     </div>
   </div>
@@ -35,14 +35,21 @@ export default {
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 400px;
-  height: 50%;
+  height: 10%;
   margin: auto;
   text-align: center;
   font-family: arial;
 }
-
+h2{
+  color:purple;
+  font-size:28px;
+}
+h1{
+  color:saddlebrown;
+  font-size:25px;
+}
 .title {
-  color: grey;
+  color: royalblue;
   font-size: 18px;
 }
 
@@ -51,8 +58,8 @@ button {
   outline: 0;
   display: inline-block;
   padding: 8px;
-  color: white;
-  background-color: #000;
+  color: black;
+  background-color: green;
   text-align: center;
   cursor: pointer;
   width: 100%;

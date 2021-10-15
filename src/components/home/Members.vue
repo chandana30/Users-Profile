@@ -1,5 +1,5 @@
 <template>
-  <h1>Users</h1>
+  <h1>List of Users Profile</h1>
   <div class="row">
     <div class="column" v-for="(uservalue, index) in userData" :key="index">
       <div class="card" @click="getdata(uservalue)">
@@ -45,13 +45,15 @@ export default {
 <style scoped>
 * {
   box-sizing: border-box;
+  color:purple;
+  
 }
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
 .column {
   float: left;
-  width: 27%;
+  width: 35%;
   padding: 0 10px;
   margin-bottom: 30px;
 }
@@ -83,7 +85,7 @@ img {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 16px;
   text-align: center;
-  background-color: #84b68b;
+  background-color: black;
   height: 250px;
 }
 </style>
